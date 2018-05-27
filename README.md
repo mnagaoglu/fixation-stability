@@ -9,3 +9,10 @@ ISOA stands for isoline area and BCEA stands for bivariate contour ellipse area.
 [kde2d_trimmed.m](kde2d_trimmed.m) is a "hacked" version of [kde2d.m](https://www.mathworks.com/matlabcentral/fileexchange/17204-kernel-density-estimation?focused=5829342&tab=function) by Zdravko Botev. "Hacking" was done by [Bosco Tjan](https://en.wikipedia.org/wiki/Bosco_Tjan).
 
 
+## Examples
+
+Normally distributed data
+![exampleI](exampleI.tif)
+
+Multimodal data
+![exampleII](exampleII.tif)
