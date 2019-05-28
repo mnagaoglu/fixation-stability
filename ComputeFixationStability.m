@@ -1,14 +1,17 @@
 function [isoa, bcea, PRL, PRL2, density, xGrid, yGrid, fh] = ...
     ComputeFixationStability(xDeg, yDeg, cumProb, isShowPlot)
 %[isoa, bcea, density, stats, fh] = ...
-%    ComputeFixationStability(xDeg, yDeg, isShowPlot)
+%    ComputeFixationStability(xDeg, yDeg, cumProb, isShowPlot)
 %
 %
 % MNA 5/26/2018 wrote it. mnagaoglu@gmail.com
+% MNA 5/28/2019 better input handling.
 %
-%
-if nargin<3
+if nargin<3 || isempty(cumProb)
     cumProb = 0.68;
+end
+
+if nargin<4 || isempty(isShowPlot)
     isShowPlot = 1;
 end
 
